@@ -6,7 +6,9 @@ on:
     paths:
       - '*.py'
   pull_request:
-    types: [ assigned, opened, synchronize, reopened ]
+    types: [assigned, opened, synchronize, reopened]
+  workflow_dispatch:
+
 jobs:
   check:
     name: Format and Lint Checks
